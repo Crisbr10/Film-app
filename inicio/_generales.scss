@@ -1,0 +1,37 @@
+   $display:flex;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    motion: 0;
+    font-family:Arial, Helvetica, sans-serif    ;
+
+    body {
+        margin: 0;
+        background: url(../IMG/ES-es-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .degradado {
+            z-index: -1;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(267deg, rgba(0, 0, 0, 0.479) 0%, rgba(5, 2, 29, 0.89) 93%);
+        }
+        header{
+            padding: 0 2rem 0 2rem;
+            z-index: 3;
+            width: 100%;
+            display:$display;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.151) 0%, rgba(6,1,48,1) 56%);
+        }
+    }
+}

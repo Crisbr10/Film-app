@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre las últimas películas y series de televisión con nuestra base de datos alimentada por la API de TMDb. Obtén información detallada sobre los actores, tramas, calificaciones y más. ¡Todo lo que necesitas para mantenerte actualizado con el mundo del cine y la televisión está aquí!"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="peliculas.css" />
+    <link rel="shortcut icon" href="../IMG/netflix.png" type="image/x-icon">
+    <title>Películas</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="../inicio/index.html"><img id="logo" src="../IMG/Netflix_Logo_PMS.png" alt="Logo de Netflix" /></a>
+      <span
+        ><input id="inputSearch" type="text" /><button id="search">
+          <img src="../ICONS/icons8-búsqueda-50.png" alt="busqueda" /></button
+      ></span>
+    </header>
+    <main>
+      <div id="cards"></div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="movies.js"></script>
+</html>

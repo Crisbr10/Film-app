@@ -1,0 +1,71 @@
+@import"../generales";
+@import"../mediaQuerys";
+
+#btnBack{
+    margin-left: 3rem;
+    width: 3rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+#modal{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid rgb(0, 204, 255);
+    border-radius: 1rem;
+    font-weight: 400;
+    
+    h2{
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    #infoModal{
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     color: white;
+     div#geners{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        span{
+            padding: 0.3rem;
+            border: 1px solid rgb(0, 195, 255);
+            border-radius: 0.5rem;
+        }
+     }
+    }
+}
+#imgModal{
+    width:60%;
+    height: 30rem;
+    border-radius: 1rem;
+}
+#imgActor{
+    width: 8rem;
+}
+section#elencoFotos{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    span{
+        width: 8rem;
+        h4{
+            color: white;
+        }
+        h5{
+            color: aqua;
+        }
+    }
+}
+

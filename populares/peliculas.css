@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+* {
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #14213d;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+header img {
+  width: 12rem;
+}
+header span {
+  display: flex;
+}
+header span button {
+  height: 2rem;
+  background-color: rgba(148, 148, 148, 0.2666666667);
+  border: none;
+  margin-right: 9rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+header span button img {
+  width: 30px;
+  filter: invert(1);
+}
+header input {
+  padding-left: 0.5rem;
+  color: white;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 2rem;
+  outline: none;
+  border: none;
+  background-color: rgba(148, 148, 148, 0.2666666667);
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+main #cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main #cards .movie {
+  border: 1px solid rgb(1, 196, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 14rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.781);
+  height: 26rem;
+}
+main #cards .movie span.data {
+  position: relative;
+  margin: 1rem 0 0 -7rem;
+}
+main #cards .movie .movieInfo {
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+main #cards .movie .movieInfo h3 {
+  margin-top: 0.5rem;
+}
+main #cards .movie .movieInfo span {
+  background-color: #053bad;
+  width: 1.7rem;
+  height: 1.7rem;
+  align-self: self-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  margin: -1rem 2rem 0 0;
+  font-weight: 600;
+}
+main #cards .movie img {
+  border-radius: 1rem;
+}
+main #cards .movie .overview {
+  position: absolute;
+  width: 14rem;
+  padding: 0 1rem 0 1rem;
+  visibility: hidden;
+  height: 20rem;
+}
+main #cards .movie .overview h3 {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+main #cards .movie:hover .overview {
+  z-index: 10;
+  display: block;
+  background-color: #14213d;
+  height: 28rem;
+  visibility: visible;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #14213d;
+  }
+  body header#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+  body header#header #logo {
+    width: 10rem;
+  }
+  body header#header span {
+    display: flex;
+  }
+  body header#header span button {
+    height: 2rem;
+    background-color: rgba(148, 148, 148, 0.2666666667);
+    border: none;
+    margin-right: 2rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  body header#header span button img {
+    width: 30px;
+    filter: invert(1);
+  }
+  body header#header span input {
+    width: 8rem;
+    padding-left: 0.5rem;
+    color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 2rem;
+    outline: none;
+    border: none;
+    background-color: rgba(148, 148, 148, 0.2666666667);
+  }
+  body main {
+    width: 100%;
+  }
+  body main #cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  body main #cards .movie {
+    border: 1px solid rgb(1, 196, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 14rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.781);
+    height: 26rem;
+  }
+  body main #cards .movie span.data {
+    position: relative;
+    margin: 1rem 0 0 -7rem;
+  }
+  body main #cards .movie .movieInfo {
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  body main #cards .movie .movieInfo h3 {
+    margin-top: 0.5rem;
+  }
+  body main #cards .movie .movieInfo span {
+    background-color: #053bad;
+    width: 1.7rem;
+    height: 1.7rem;
+    align-self: self-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    margin: -1rem 2rem 0 0;
+    font-weight: 600;
+  }
+  body main #cards .movie img {
+    border-radius: 1rem;
+  }
+  body main #cards .movie .overview {
+    position: absolute;
+    width: 14rem;
+    padding: 0 1rem 0 1rem;
+    visibility: hidden;
+    height: 20rem;
+  }
+  body main #cards .movie .overview h3 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  body main #cards .movie:hover .overview {
+    z-index: 10;
+    display: block;
+    background-color: #14213d;
+    height: 28rem;
+    visibility: visible;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 950px) {
+  #modal {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    font-weight: 400;
+  }
+  #modal section#infoModal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+  }
+  img#imgModal {
+    width: 100%;
+    height: 30%;
+    border-radius: 1rem;
+  }
+}
+#btnBack {
+  margin-left: 3rem;
+  width: 3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+#modal {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid rgb(0, 204, 255);
+  border-radius: 1rem;
+  font-weight: 400;
+}
+#modal h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+#modal #infoModal {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+#modal #infoModal div#geners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#modal #infoModal div#geners span {
+  padding: 0.3rem;
+  border: 1px solid rgb(0, 195, 255);
+  border-radius: 0.5rem;
+}
+
+#imgModal {
+  width: 60%;
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+#imgActor {
+  width: 8rem;
+}
+
+section#elencoFotos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+section#elencoFotos span {
+  width: 8rem;
+}
+section#elencoFotos span h4 {
+  color: white;
+}
+section#elencoFotos span h5 {
+  color: aqua;
+}/*# sourceMappingURL=peliculas.css.map */

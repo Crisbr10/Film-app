@@ -1,0 +1,256 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  motion: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* body {
+  margin: 0;
+  background: url(../IMG/ES-es-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* body .degradado {
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(267deg, rgba(0, 0, 0, 0.479) 0%, rgba(5, 2, 29, 0.89) 93%);
+}
+* body header {
+  padding: 0 2rem 0 2rem;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* body main {
+  display: flex;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151) 0%, rgb(6, 1, 48) 56%);
+}
+
+header img {
+  width: 12rem;
+}
+header .login {
+  display: flex;
+  gap: 1rem;
+}
+header .login a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+header .login .iniciarSesion {
+  border: none;
+  background-color: red;
+}
+header .login .iniciarSesion:hover {
+  transition: 0.2s;
+  background-color: rgb(197, 0, 0);
+}
+header span {
+  border: 1px solid rgba(255, 255, 255, 0.664);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 2rem;
+  width: 7.5rem;
+  border-radius: 5px;
+}
+header span img {
+  width: 1.5rem;
+}
+header span select {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+header span select option {
+  width: 7.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem 0 0 8rem;
+}
+.title h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.title h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1.4rem;
+  color: white;
+}
+
+#email {
+  width: 25rem;
+  height: 3.5rem;
+  margin-top: 1rem;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.623);
+  border: 1px solid rgba(255, 255, 255, 0.596);
+  border-radius: 2px;
+  padding: 1rem;
+  color: white;
+}
+#email::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.76);
+}
+#email::placeholder {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.email {
+  width: 60%;
+}
+.email button {
+  width: 7rem;
+  height: 3.5rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.container {
+  margin-top: 6rem;
+  border-radius: 1rem;
+  width: 90%;
+  background: rgb(18, 1, 80);
+  background: linear-gradient(306deg, rgb(18, 1, 80) 61%, rgb(173, 0, 0) 100%);
+}
+.container .disfruta2, .container .descarga {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container .disfruta2 .description, .container .descarga .description {
+  width: 33rem;
+}
+.container .disfruta2 .description h1, .container .descarga .description h1 {
+  font-size: 3rem;
+}
+.container .disfruta2 .description p, .container .descarga .description p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.container .disfruta2 img, .container .descarga img {
+  width: 30rem;
+}
+.container .disfruta, .container .niños {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container .disfruta .description, .container .niños .description {
+  width: 33rem;
+}
+.container .disfruta .description h1, .container .niños .description h1 {
+  font-size: 3rem;
+}
+.container .disfruta .description p, .container .niños .description p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.container .disfruta img, .container .niños img {
+  width: 30rem;
+}
+.container hr {
+  width: 80%;
+  height: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.466);
+  border: none;
+}
+
+@media (max-width: 1190px) {
+  header#header {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  header#header img {
+    width: 150px;
+  }
+  header#header span {
+    width: 6rem;
+    font-size: 12px;
+  }
+  header#header span img {
+    width: 1rem;
+  }
+  header#header select {
+    gap: 0;
+    font-size: 12px;
+  }
+  body {
+    justify-content: center;
+  }
+  label {
+    width: 20rem;
+  }
+  .title h1 {
+    font-size: 2rem;
+    display: flex;
+  }
+  .title {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  .container {
+    background-color: black;
+  }
+  .email {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .email input#email {
+    width: 18rem;
+  }
+  main {
+    width: 100%;
+  }
+  main .container {
+    width: 90%;
+  }
+  main .container .disfruta .description, main .container .niños .description, main .container .disfruta2 .description, main .container .descarga .description {
+    width: 30rem;
+  }
+  main .container .disfruta .description h1, main .container .niños .description h1, main .container .disfruta2 .description h1, main .container .descarga .description h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  main .container .disfruta .description p, main .container .niños .description p, main .container .disfruta2 .description p, main .container .descarga .description p {
+    text-align: center;
+  }
+  main .container .disfruta img, main .container .niños img, main .container .disfruta2 img, main .container .descarga img {
+    width: 18rem;
+  }
+}/*# sourceMappingURL=index.css.map */
